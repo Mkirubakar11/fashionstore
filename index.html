@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h2>FASHION STORE</h2>
+<input type="text" placeholder="Search...">
+<div class="cart">Cart (0)</div>
+</header>
+
+<section class="hero">
+
+<div class="bg-text">FASHION</div>
+
+<div class="hero-content">
+<h1>Z2 MEN'S COLLECTION</h1>
+<p>Trendy • Stylish • Premium</p>
+<button>Shop Now</button>
+</div>
+
+</section>
+
+
+<section class="products">
+
+<div class="card">
+<div class="badge">NEW</div>
+<span onclick="like(this)">♡</span>
+<img src="images/shirt.jpg">
+<h3>Casual Shirt</h3>
+<p>₹999</p>
+<button onclick="addCart()">Add to Cart</button>
+<button onclick="view('Casual Shirt',8,'images/shirt.jpg')">View</button>
+</div>
+
+<div class="card">
+<div class="badge">HOT</div>
+<span onclick="like(this)">♡</span>
+<img src="images/tshirt.jpg">
+<h3>Oversized Tshirt</h3>
+<p>₹799</p>
+<button onclick="addCart()">Add to Cart</button>
+<button onclick="view('Tshirt',5,'images/tshirt.jpg')">View</button>
+</div>
+
+<div class="card">
+<div class="badge">SALE</div>
+<span onclick="like(this)">♡</span>
+<img src="images/jeans.jpg">
+<h3>Slim Fit Jeans</h3>
+<p>₹1499</p>
+<button onclick="addCart()">Add to Cart</button>
+<button onclick="view('Jeans',3,'images/jeans.jpg')">View</button>
+</div>
+
+</section>
+
+
+<div class="popup" id="popup">
+<div class="popup-content">
+
+<img id="popup-img">
+
+<h2 id="title"></h2>
+
+<p id="stock"></p>
+
+<button onclick="closePopup()">Close</button>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
